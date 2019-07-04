@@ -11,7 +11,7 @@ namespace BestUniversity
     {
         static void Main(string[] args)
         {
-            var createSt = CreateStudents(50);
+            var createSt = CreateStudents(50).ToList();
 
             var bestUni = createSt
               .GroupBy(p => p.University)
